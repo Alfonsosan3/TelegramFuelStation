@@ -12,7 +12,7 @@ Bot Telegram (Python):
 * Requests (Para hacer la solicitud a la API de las gasolineras),json
 * Telegram
 * MySQL
-* Geopy (para saber la distancia entre laS gasolineras y la ubicación del usuario)
+* Geopy (para saber la distancia entre las gasolineras y la ubicación del usuario)
 
 
 

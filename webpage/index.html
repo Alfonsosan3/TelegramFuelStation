@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title href="index.html">
+        Gasolineras España
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css styles/styles.css">
+    <link rel="icon" href="images/fuel_station_icon.ico" sizes="16x16" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h3>Gasolineras España</h3>
+    </header>
+    
+    <div id="menu">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
+            <li><a href="help.html"><i class="fa-solid fa-circle-info"></i><span>Ayuda</span></a>  
+        </ul>
+        
+    </div>    
+    <section class="container_index">
+        
+        <div class="container_plot">
+            <canvas id="plot" width="400" height="400"></canvas>
+        </div>  
+        <div class="container_select">
+            <select name="plot_type" id="select_plot" onchange="updateChart()">
+                <option disabled ="Selecciona una opción">Selecciona una opción</option>
+                <option value="count">Commands</option>
+                <option value="location">CCAA</option>
+                <option value="mostused">Most Used</option>
+                
+            </select>
+        </div>
+       
+    </section>
+     
+    
+    <script src="client.js"></script>
+</body>
+</html>

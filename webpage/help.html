@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title href="index.html">
+        Gasolineras España
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css styles/styles.css">
+    <link rel="icon" href="images/fuel_station_icon.ico" sizes="16x16" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h3>Gasolineras España</h3>
+    </header>
+        
+    <div id="menu">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
+            <li><a href="help.html"><i class="fa-solid fa-circle-info"></i><span>Ayuda</span></a>  
+        </ul>
+            
+    </div>
+       
+    <section class="container">
+        <h4>Información del proyecto:</h4>
+            <ul>
+                <li>Este es un proyecto personal realizado para prácticar html,javascript y css.</li>
+
+                <li>También realizo varias consultas a una base datos personal para conseguir los datos que se representan en las gráficas. Para ello utilizo el framework Express.js y una base de datos MySQL.</li>
+ 
+                <li>Los datos se recogen gracias a la información que proporciona el bot de telegram que he realizado conjuntamente a este proyecto. El usuario envía su ubicación al bot de telegram y este hace una request a una API REST de la página oficial de carburantes del Gobierno de España. Después se procesan los datos mediante un filtrado que devolverá las gasolineras más cercanas dependiendo de la ubicación del usuario y del precio del carburante seleccionado. <a href="https://t.me/GasolinerasBalearesbot">Bot de Telegram</a> .</li>
+           
+                <li>Frameworks Python: Telegram, Requests, Json, MySQL, Datetime y Geopy.</li>
+              
+                <li>Frameworks JavaScript: Chart, Cors, MySQL2 y Express.</li>
+            </ul>
+        
+    </section>  
+    <section>
+        
+        <section class="code_section">
+            <div id="separator">
+                Commands
+                <hr class="separator">
+            </div>    
+            <pre>
+                <code class="language-sql">
+                    select message as data,count(message) as count 
+                    from logs 
+                    where message in ('start','f95','diesel') 
+                    group by message;             
+                </code>
+            </pre>
+
+        </section>
+        
+        <section class="code_section">
+            <div id="separator">
+                CCAA
+                <hr class="separator">
+            </div>    
+            <pre>
+                <code class="language-sql">
+                    select name as data, count(name) as count 
+                    from ccaa_register as r 
+                    inner join ccaa as c 
+                    on c.id_ccaa=r.location_id 
+                    group by name;             
+                </code>
+            </pre>
+
+        </section>
+        
+        <section class="code_section">
+            <div id="separator">
+                Most Used
+                <hr class="separator">
+            </div>    
+            <pre>
+                <code class="language-sql">
+                    select date(msg_date) as data,count(msg_date) as count 
+                    from logs
+                    where message in ('f95','diesel')
+                    group by date(msg_date) 
+                    order by count(msg_date) desc 
+                    limit 6;             
+                </code>
+            </pre>
+        </section>
+        <section class="container">
+        <h4>¿Qué he aprendido?:</h4>
+                <ul>
+                    <li>HTML,JavaScript y Css.</li>
+
+                    <li>Mecanismo CORS.</li>
+
+                    <li>Abrir un puerto, hacer llamadas con js y realizar consultas.</li>
+       
+                    <li>Eventos en js.</li>
+                    
+                    <li>Haciendo el bot de Telegram: Hacer llamadas a APIs REST, archivos json y cómo manipularlos. Utilizar el framework que proporciona telegram. Conectarme a bases de datos. </li>
+                </ul>
+        <h4>Cosas a mejorar:</h4>
+            <ul>
+                <li>Diseño de páginas: utilizando Css en profundidad o algún framework de js. </li>
+                
+            </ul>
+        </section>
+    </section>   
+</body>
+</html>

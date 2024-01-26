@@ -1,0 +1,124 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+body{
+    
+    margin:0;
+    padding: 0;
+}
+
+header{
+    
+    margin:0;
+    padding: 1%;
+    
+}
+
+#menu{
+    float: left;
+    width: 200px; /* Ancho del menú */
+    height: 100vh; /* Altura completa de la ventana */
+    text-align: justify;
+    
+}
+#menu ul{
+    list-style-type: none;
+
+}
+#menu li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#menu li a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    display: block;
+    background-color: rgb(255, 255, 255); 
+    border: 9px solid transparent; 
+    border-radius: 20px;
+    
+
+}
+#menu li a:hover{
+    background-color: rgb(222, 222, 222);
+    border-color: rgb(222, 222, 222);
+
+}
+
+#menu li i{
+    order:-1;
+    margin-right: 20px;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    #menu li span {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+.container{
+    margin-right: 400px;
+    display: grid;
+    
+    justify-content: left;
+}
+
+.container_index{
+    margin-right: 400px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.container_plot{
+    align-content: center;
+    width: 400px;
+    margin: 0 auto;
+    
+}
+
+.container_select{
+    
+    display: grid;
+    align-items: center;
+    height: 100px;
+}
+
+
+#select_plot{
+    border-radius: 5px;
+    width: 200px;
+}
+
+.icon_container{
+    height: 20px;
+    
+}
+
+
+.code_section {
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: 250px ;
+    margin-right: 800px;
+    
+}
+
+
+#separator{
+    justify-content: right;
+}
+
+

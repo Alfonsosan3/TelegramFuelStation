@@ -23,4 +23,4 @@ Página web (HTML,JavaScript y CSS):
 
 # VISUALIZACIÓN
   
-![]()
+![](gasolineras_españa.png)

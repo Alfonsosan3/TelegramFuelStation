@@ -19,7 +19,7 @@ Bot Telegram (Python):
 Página web (HTML,JavaScript y CSS):
 - Chart (realizar gráficas)
 - MySQL2
-- Express (Para hacer la consulta en la base de datos)
+- Express (para hacer la consulta en la base de datos)
 
 # VISUALIZACIÓN
   

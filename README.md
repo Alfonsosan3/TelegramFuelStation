@@ -9,14 +9,17 @@ Este es un proyecto realizado para practicar con Python, MySql, HTML, CSS y Java
 
 
 Bot Telegram (Python):
-  -Requests (Para hacer la solicitud a la API de las gasolineras),json
-  -Telegram
-  -MySQL
-  -Geopy (para saber la distancia entre lsa gasolineras y la ubicación del usuario)
+-Requests (Para hacer la solicitud a la API de las gasolineras),json
+-Telegram
+-MySQL
+-Geopy (para saber la distancia entre laS gasolineras y la ubicación del usuario)
+
+
+
 Página web (HTML,JavaScript y CSS):
-  -Chart (realizar gráficas)
-  -MySQL2
-  -Express (Para hacer la consulta en la base de datos)
+-Chart (realizar gráficas)
+-MySQL2
+-Express (Para hacer la consulta en la base de datos)
 
 # VISUALIZACIÓN
   
